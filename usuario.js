@@ -7,7 +7,7 @@ function validarinfo(id, nombre, apellido, celular, correo) {
         text: 'Digite un ID'
       });
     for (const key in usuarios) {
-        if (usuarios[key].id.includes(id)) return Swal.fire({
+        if (usuarios[key].id == id) return Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'El usuario ya existe'
